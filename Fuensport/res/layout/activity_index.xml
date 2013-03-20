@@ -1,75 +1,142 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-android:layout_width="fill_parent"
-android:layout_height="fill_parent"
-android:background="@drawable/fondo"
-android:orientation="vertical" >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".IndexActivity" >
 
-    <View
-    	android:id="@+id/viewImagen"
-        android:layout_width="wrap_content"
-        android:layout_height="58dp"
-        android:background="@drawable/encabezado" />
-    
-   <EditText
-        android:id="@+id/editTextLogin"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/viewImagen"
-        android:layout_below="@+id/viewImagen"
-        android:layout_marginTop="14dp"
-        android:layout_marginLeft="18dp"
-        android:text="Login"
-        android:textColor="#838383" >    
-        <requestFocus />
-    </EditText>
-    
-   <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editTextLogin"
-        android:layout_below="@+id/editTextLogin"
-        android:layout_marginTop="14dp"
-        android:layout_marginLeft="18dp"
-        android:text="Password"
-        android:textColor="#838383" >    
-        <requestFocus />
-    </EditText>
-    
-   <Button
-        android:id="@+id/buttonIniciarSesion"
+    <LinearLayout
+        android:id="@+id/linearLayout1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/edtiTextPassword"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="100dp"
-        android:text="Iniciar Sesion" />
-   
-   <TextView
-        android:id="@+id/OlvidoPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/buttonIniciarSesion"
-        android:layout_marginTop="36dp"
-        android:layout_marginLeft="60dp"
-        android:clickable="true"
-        android:onClick="true"
-        android:text="¿Has olvidado la contraseña?"
-        android:textColor="#0000FF" />
-   
-   <TextView
-        android:id="@+id/SinoRegistrado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/OlvidoPassword"
-        android:layout_marginTop="36dp"
-        android:layout_marginLeft="18dp"
-        android:text="Si no estas registrado:" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:orientation="vertical" >
 
-   <Button
-       android:id="@+id/buttonRegistro"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Registrate" />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:background="@drawable/encabezado" />
+    </LinearLayout>
 
-</LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Login"
+            android:textColor="#838383" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp" />
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Contraseña"
+            android:textColor="#838383" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#CC0000" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:text="Iniciar Sesión" />
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿Has olvidado la contraseña?"
+                android:textColor="#0000FF" />
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="wrap_content"
+                android:layout_height="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.47"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Si no estás registrado" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.07"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Registrate" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
