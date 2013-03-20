@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/fondo"
+android:orientation="vertical" >
+
+    <View
+    	android:id="@+id/viewImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:background="@drawable/encabezado" />
+
+    <TextView
+        android:id="@+id/textViewRellenar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="18dp"
+        android:text="Rellene todos los campos" />
+    
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewRellenar"
+        android:layout_below="@+id/textViewRellenar"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="18dp"
+        android:text="Nombre de usuario"
+        android:textColor="#838383" >    
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textViewErrorUsuario"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#FF0000"
+        android:text=""/>
+    
+    <EditText
+        android:id="@+id/EditTextPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextUsuario"
+        android:layout_below="@+id/editTextUsuario"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:text="Contraseña"
+        android:textColor="#838383" />
+    
+    <TextView
+        android:id="@+id/textViewErrorPassword"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#FF0000"
+        android:text=""/>
+    
+    <EditText
+        android:id="@+id/EditTextCorreo"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EditTextPassword"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="18dp"
+        android:text="Cuenta de correo"
+        android:textColor="#838383" />
+    
+    <TextView
+        android:id="@+id/textViewErrorCorreo"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#FF0000"
+        android:text=""/>
+
+    <Button
+        android:id="@+id/buttonConfirmarRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="8dp"
+        android:text="Acceptar" />
+
+</LinearLayout>

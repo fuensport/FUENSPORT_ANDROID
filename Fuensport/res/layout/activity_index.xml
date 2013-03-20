@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:background="@drawable/fondo"
+android:orientation="vertical" >
+
+    <View
+    	android:id="@+id/viewImagen"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:background="@drawable/encabezado" />
+    
+   <EditText
+        android:id="@+id/editTextLogin"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/viewImagen"
+        android:layout_below="@+id/viewImagen"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="18dp"
+        android:text="Login"
+        android:textColor="#838383" >    
+        <requestFocus />
+    </EditText>
+    
+   <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextLogin"
+        android:layout_below="@+id/editTextLogin"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="18dp"
+        android:text="Password"
+        android:textColor="#838383" >    
+        <requestFocus />
+    </EditText>
+    
+   <Button
+        android:id="@+id/buttonIniciarSesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtiTextPassword"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="100dp"
+        android:text="Iniciar Sesion" />
+   
+   <TextView
+        android:id="@+id/OlvidoPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonIniciarSesion"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="60dp"
+        android:clickable="true"
+        android:onClick="true"
+        android:text="¿Has olvidado la contraseña?"
+        android:textColor="#0000FF" />
+   
+   <TextView
+        android:id="@+id/SinoRegistrado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/OlvidoPassword"
+        android:layout_marginTop="36dp"
+        android:layout_marginLeft="18dp"
+        android:text="Si no estas registrado:" />
+
+   <Button
+       android:id="@+id/buttonRegistro"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Registrate" />
+
+</LinearLayout>
